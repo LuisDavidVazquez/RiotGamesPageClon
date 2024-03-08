@@ -1,0 +1,569 @@
+@font-face {
+  font-family: 'Mark Pro';
+  src: url(fonts/Mark-Pro.ttf);
+}
+
+* {
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background-color: black;
+}
+
+/*CSS del header*/
+header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+
+header li {
+  padding-top: 10px;
+  align-items: center;
+  display: inline-flex;
+  height: 50px;
+  border-bottom: 4px solid transparent;
+}
+
+header li:hover {
+  border-bottom: 4px solid #d13639;
+}
+
+
+header li a:hover {
+  background-color: #cecece3b;
+  border-radius: 5px;
+}
+
+header li a {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  text-decoration: none;
+  padding: 0px 20px 0px 20px;
+  font-family: 'Mark Pro', Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: .08em;
+  font-size: 13px;
+  color: #F9F9F9;
+}
+
+header nav {
+  padding-left: 30px;
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+
+header div {
+  padding-right: 30px;
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+
+#input-header-div {
+  padding-left: 20px;
+  width: 140px;
+  height: 32px;
+  border-radius: 25px;
+  border: 1px solid;
+  border-color: #F9F9F9;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+}
+
+.input-header::placeholder {
+  color: #F9F9F9;
+  font-family: 'Mark Pro', Arial, sans-serif;
+}
+
+.input-header:focus {
+  outline: none;
+}
+
+.input-header {
+  background-color: transparent;
+  width: 100px;
+  font-size: 12px;
+  color: #F9F9F9;
+  font-family: 'Mark Pro', Arial, sans-serif;
+  font-weight: 600;
+}
+
+.languaje {
+  border-radius: 7px;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  display: flex
+}
+
+.languaje:hover {
+  background-color: #cecece3b;
+
+}
+
+.button-header {
+  letter-spacing: .08em;
+  font-weight: 600;
+  font-family: 'Mark Pro', Arial, sans-serif;
+  width: 160px;
+  height: 35px;
+  border-radius: 25px;
+  background-color: #d13639;
+  cursor: pointer;
+
+}
+
+/*Combo box*/
+.combo-box {
+  position: relative;
+  display: inline-block;
+}
+
+.combo-box .combo-box-contenido a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #7a7a7a;
+}
+
+.combo-box-contenido {
+  border-top: 3px solid #d13639;
+  background-color: #2b2a29;
+  height: 150px;
+  position: absolute;
+  display: none;
+  width: 83%;
+}
+
+.combo-box:hover .combo-box-contenido {
+  display: block;
+}
+
+
+
+/*CSS del Main*/
+main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url(img/imagen-principal.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 85vh;
+}
+
+main div {
+  padding-left: 80px;
+  width: 100%;
+}
+
+main center {
+  width: 590px;
+  height: 443px;
+}
+
+main h1 {
+  padding-top: 30px;
+  font-family: 'Mark Pro', Arial, sans-serif;
+  color: #F9F9F9;
+}
+
+main p {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Mark Pro', Arial, sans-serif;
+  color: #F9F9F999;
+}
+
+main a {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  text-decoration: none;
+  color: #F9F9F9;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: 'Mark Pro', Arial, sans-serif;
+  background: linear-gradient(315deg, #0bc4e2 0, #2c8cc2 100%);
+  border-radius: 25px;
+  width: 250px;
+  transition: box-shadow 0.3s;
+}
+
+main a:hover {
+  box-shadow: 0px 0px 20px #0bc4e2;
+}
+
+
+/*CSS de Section 1*/
+.section-1 {
+  background: radial-gradient(55% 2000% at 1% 50%, rgba(11, 196, 226, 0.2) 0, rgba(10, 10, 10, 0) 75%, rgba(10, 10, 10, 0) 100%);
+  padding: 100px 80px;
+
+}
+
+.section-1-cabeza {
+  display: flex;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.section-1-cabeza h2 {
+  color: #F9F9F9;
+  width: 100%;
+  font-weight: 700;
+  font-size: 48px;
+  font-family: 'Mark Pro', Arial, sans-serif;
+}
+
+.section-1-cabeza a {
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #F9F9F9;
+  font-size: 12px;
+  font-family: 'Mark Pro', Arial, sans-serif;
+  font-weight: 700;
+  width: 100px;
+  height: 30px;
+  padding: 8px, 12px;
+  border-radius: 10px;
+  background-color: #2b2a29;
+}
+
+.section-1-cuerpo {
+  display: flex;
+}
+
+.section-1-cuerpo li {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: #2B2A29;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  transition: background 0.2s;
+}
+
+.section-1-cuerpo li:hover {
+  border: 2px solid #F9F9F9;
+  background: #363636;
+}
+
+.section-1-cuerpo li a {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #F9F9F9;
+  font-size: 12px;
+  font-family: 'Mark Pro', Arial, sans-serif;
+  font-weight: 700;
+}
+
+.section-1-cuerpo .image-1 img {
+  border-radius: 20px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.section-1-cuerpo .image-1 img:hover {
+  border: 2px solid #F9F9F9;
+}
+
+.section-1-cabeza a {
+  border-radius: 20px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.section-1-cabeza a:hover {
+  background: #363636;
+}
+
+
+
+/*CSS del Section 2*/
+.section-2 {
+  background: #1f1f1f;
+  padding: 100px 80px 10px 80px;
+}
+
+.section-2 ul {
+  text-align: center;
+  justify-content: center;
+  padding-left: 0px;
+}
+
+
+.section-2 li {
+  list-style-type: none;
+  padding-bottom: 40px;
+}
+
+.section-2 img {
+  border-radius: 20px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.section- img:hover {
+  border: 2px solid #F9F9F9;
+}
+
+.section-2 img {
+  border-radius: 20px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.section-2 img:hover {
+  border: 2px solid #F9F9F9;
+}
+
+
+
+/*CSS del Section 3*/
+.section-3 {
+  background: #1f1f1f;
+  padding: 0px 80px;
+
+}
+
+.section-3 ul {
+  padding-left: 0px;
+  display: flex;
+}
+
+.section-3 li {
+  list-style-type: none;
+  padding-bottom: 40px;
+}
+
+.section-3 img {
+  border-radius: 20px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.section-3 img:hover {
+  border: 2px solid #F9F9F9;
+}
+
+
+/*CSS del Section 4*/
+.section-4 {
+  background: #1f1f1f;
+  padding: 40px 80px 0px 80px;
+}
+
+.section-4 ul {
+  display: flex;
+  padding-left: 0px;
+}
+
+.section-4 li {
+  list-style-type: none;
+  padding-bottom: 40px;
+}
+
+.section-4 img {
+  border-radius: 20px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.section-4 img:hover {
+  border: 2px solid #F9F9F9;
+}
+
+
+/*CSS del section-5*/
+.section-5 {
+  background: #1f1f1f;
+  padding: 40px 80px 0px 80px;
+  overflow: hidden;
+}
+
+.section-5-cabeza {
+  display: flex;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.section-5-cabeza h2 {
+  color: #F9F9F9;
+  width: 100%;
+  font-weight: 700;
+  font-size: 48px;
+  font-family: 'Mark Pro', Arial, sans-serif;
+}
+
+.section-5 ul {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.section-5 li {
+  list-style-type: none;
+  padding-right: 10px;
+}
+
+.section-5 img {
+  border-radius: 20px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.section-5 .animacion-2 img:hover {
+  border: 2px solid #F9F9F9;
+}
+
+.carrusel {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+/*CSS del section-6*/
+.section-6 {
+  display: inline-flex;
+  width: 100%;
+}
+
+.section-6-div-1 {
+  width: 50%;
+  background-color: white;
+  text-align: center;
+}
+
+.section-6-div-1 h2 {
+  color: #1f1f1f;
+  font-size: 48px;
+  font-family: 'Mark Pro', Arial, sans-serif;
+  font-weight: 700;
+
+}
+
+.section-6-div-1 h3 {
+  font-size: 20px;
+  font-family: 'Mark Pro', Arial, sans-serif;
+  font-weight: 700;
+  color: #656462;
+}
+
+.section-6-div-1 a {
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #e7e7e7;
+  width: 150px;
+  height: 130px;
+  padding: 20px 40px 20px 40px;
+  transition: background 0.2s
+}
+
+.section-6-div-1 a:hover {
+  background-color: #c2c2c2;
+}
+
+.section-6-div-1 a h2 {
+  font-size: 50px;
+}
+
+.section-6-div-1 a h3 {
+  font-size: 25px;
+}
+
+.section-6 button {
+  background-color: #d1363A;
+  font-size: 20px;
+  font-family: 'Mark Pro', Arial, sans-serif;
+  font-weight: 700;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s
+}
+
+.section-6 button:hover {
+  background-color: #cc5b5e;
+}
+
+.animacion:hover {
+  border-width: 100px;
+  border-color: #F9F9F9;
+}
+
+
+
+/*Footer*/
+footer {
+  width: 100%;
+  background-color: #252423;
+}
+
+.footer-div-1 {
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.footer-div-1 ul{
+  display: flex;
+  padding-left: 0px;
+}
+
+.footer-div-1 li {
+  list-style-type: none;
+}
+
+.footer-div-1 a{
+  font-family: 'Mark Pro', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: .1em;
+  font-size: 11px;
+  padding: 0px 11px;
+  color: #8A8887;
+  text-decoration: none;
+}
+
+.footer-div-2 {
+  border-top: 1px solid #8A8887;
+  padding: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.footer-div-2 a, .footer-div-2 p{
+  font-family: 'Mark Pro', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: .1em;
+  font-size: 12px;
+  padding: 0px 15px;
+  color: #8A8887;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
